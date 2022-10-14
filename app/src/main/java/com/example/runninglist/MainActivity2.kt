@@ -83,7 +83,7 @@ class MainActivity2 : AppCompatActivity(),AboutTaskAdapter.Listener {
 
 
             GetUserTask()
-            DeleteTask2()
+            //DeleteTask2()
             menuchka.setNavigationItemSelectedListener {
                 when (it.itemId) {
                     R.id.addtask -> {
