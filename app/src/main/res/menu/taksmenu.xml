@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+ <item android:title="Работа с задачами">
+   <menu>
+    <item   android:icon="@drawable/ic_addtask" android:id="@+id/addtask" android:title="@string/AddTask"></item>
+   </menu>
+ </item>
+    <item android:title="Задачи">
+        <menu>
+            <item android:id="@+id/completedtasks" android:icon="@drawable/ic_deleticonmenu" android:title="Выполненые задачи"></item>
+
+        </menu>
+    </item>
+ <item android:title="Работа с приложением">
+  <menu>
+    <item android:icon="@drawable/ic_backicon" android:title="Назад" android:id="@+id/backscreen"></item>
+  </menu>
+ </item>
+
+</menu>

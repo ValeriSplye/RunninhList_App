@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".CompletedScreenTask">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Ваши выполненные задачи"
+        android:textSize="20dp"></TextView>
+
+  <androidx.recyclerview.widget.RecyclerView
+        android:paddingStart="15dp"
+        android:id="@+id/taskcompletedlist"
+        android:layout_width="393dp"
+        android:layout_height="489dp"></androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="-10dp"
+        android:layout_width="wrap_content"
+        android:text="Назад"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:id="@+id/backscreenselect"
+        android:background="@drawable/button_black"
+        android:layout_height="wrap_content"></androidx.appcompat.widget.AppCompatButton>
+</LinearLayout>

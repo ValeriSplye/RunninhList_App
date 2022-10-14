@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">RunningList</string>
+    <string name="MyTaskButton">Мои задачи</string>
+    <string name="AbouttheSystemButton">О системе</string>
+    <string name="Next">Дальше</string>
+    <string name="NameTaskPlease">Введите название задачи</string>
+    <string name="EveryDayTask">Здача ежедневная?</string>
+    <string name="TheDay_theTask_is_completed">Выберите день сдачи задачи?</string>
+    <string name="Importance_level">Выберите важность задачи</string>
+    <string name="Task">Задачи</string>
+    <string name="AddTask">Добавить задачу</string>
+    <string name="DeleteTask">Выполнил задачу/Не выполнил задачу</string>
+    <string name="MoveTask2">Передвинуть задачу вправо</string>
+    <string name="MoveATask">Передвинуть задачу влево</string>
+
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/user/AndroidStudioProjects/RunningList/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1325" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RunningList/app/src/main/res/drawable/backraundscreens.xml" value="0.14" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RunningList/app/src/main/res/drawable/botton_r.xml" value="0.25" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RunningList/app/src/main/res/drawable/botton_rblack.xml" value="0.1625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RunningList/app/src/main/res/drawable/button_black.xml" value="0.1625" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RunningList/app/src/main/res/drawable/ic_backicon.xml" value="0.1325" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RunningList/app/src/main/res/drawable/ic_delete_task.xml" value="0.195" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RunningList/app/src/main/res/drawable/ic_icondelet.xml" value="0.195" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RunningList/app/src/main/res/drawable/ic_iconellovlvl.xml" value="0.1325" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RunningList/app/src/main/res/drawable/ic_icongreenlvl.xml" value="0.1325" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RunningList/app/src/main/res/drawable/ic_iconnext.xml" value="0.1325" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RunningList/app/src/main/res/drawable/ic_iconramk.xml" value="0.133" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RunningList/app/src/main/res/drawable/ic_iconredlvl.xml" value="0.133" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RunningList/app/src/main/res/drawable/ic_move_task.xml" value="0.1325" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RunningList/app/src/main/res/drawable/laout2.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RunningList/app/src/main/res/drawable/layuot.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RunningList/app/src/main/res/drawable/textback.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RunningList/app/src/main/res/layout-land/activity_add_task_screan.xml" value="0.33" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RunningList/app/src/main/res/layout-land/activity_main2.xml" value="0.2" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RunningList/app/src/main/res/layout-land/tasklist_layuot.xml" value="0.15" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RunningList/app/src/main/res/layout-large/activity_about_running_lists.xml" value="0.17" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RunningList/app/src/main/res/layout-large/activity_main.xml" value="0.11171875" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RunningList/app/src/main/res/layout-large/activity_screen_selection.xml" value="0.11171875" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RunningList/app/src/main/res/layout-normal/activity_about_running_lists.xml" value="0.14895833333333333" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RunningList/app/src/main/res/layout-normal/activity_main.xml" value="0.14895833333333333" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RunningList/app/src/main/res/layout-normal/activity_screen_selection.xml" value="0.14895833333333333" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RunningList/app/src/main/res/layout/aboud_item.xml" value="0.16" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RunningList/app/src/main/res/layout/aboudscreans_item.xml" value="0.33" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RunningList/app/src/main/res/layout/activity_about_running_lists.xml" value="0.22" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RunningList/app/src/main/res/layout/activity_add_task_screan.xml" value="0.3165680473372781" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RunningList/app/src/main/res/layout/activity_completed_screen_task.xml" value="0.151268115942029" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RunningList/app/src/main/res/layout/activity_main.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RunningList/app/src/main/res/layout/activity_main2.xml" value="0.18" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RunningList/app/src/main/res/layout/activity_screen_selection.xml" value="0.22" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RunningList/app/src/main/res/layout/days_week.xml" value="0.18" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RunningList/app/src/main/res/layout/taskitem.xml" value="0.151268115942029" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RunningList/app/src/main/res/layout/tasklist_layuot.xml" value="0.18" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RunningList/app/src/main/res/menu/taksmenu.xml" value="0.33" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
