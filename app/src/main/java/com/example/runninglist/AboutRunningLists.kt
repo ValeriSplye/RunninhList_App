@@ -11,7 +11,7 @@ class AboutRunningLists : AppCompatActivity() {
     lateinit var binding: ActivityAboutRunningListsBinding
     private val adapter = AbountScreanAdapter()
     private val TitleList = listOf("Функции","Польза системы","Плюсы","Идея")
-    private val  TextList = listOf("Добавление и перенос дел","С этим приложением вести свои дела проще.Если какие-то дела назначенные за день не получилось выполнить,то их можно просто перенести!","Плюсы: Наглядность,легко отменять задачи,понимание нагрузки на неделю","Основная идея этой системы планирования заключается в том, что вся неделя- это непрерывно бегущий список дел, от сюда и название RUNNING LIST или же бегущий список")
+    private val  TextList = listOf("Добавление и перенос а также просмотр выполненых задач","С этим приложением вести свои дела проще.Если какие-то дела назначенные за день не получилось выполнить,то их можно просто перенести!"," Наглядность,легко отменять задачи,понимание нагрузки на неделю","Основная идея этой системы планирования заключается в том, что вся неделя- это непрерывно бегущий список дел, от сюда и название RUNNING LIST или же бегущий список")
     private val ImageList = listOf(R.drawable.abount1,R.drawable.about2,R.drawable.about3,R.drawable.abount1)
     private var index : Int =0
     override fun onCreate(savedInstanceState: Bundle?) {

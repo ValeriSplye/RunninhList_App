@@ -53,8 +53,8 @@ class MainActivity2 : AppCompatActivity(),AboutTaskAdapter.Listener {
 
         AddTaskLauncher =
             registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
-
-                if (it.resultCode == RESULT_OK) {
+                if(it.resultCode == RESULT_OK){Toast.makeText(this,"dsd",Toast.LENGTH_SHORT).show()}
+            if (it.resultCode == RESULT_OK) {
                     var task = it.data!!.getSerializableExtra("task") as DataClassTaskUsers;
                     var OsnTask = AboutTask(
                         BigRandom,

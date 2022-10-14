@@ -26,7 +26,8 @@
             android:exported="false" />
         <activity
             android:name=".AddTaskScrean"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".AboutRunningLists"
             android:exported="false"

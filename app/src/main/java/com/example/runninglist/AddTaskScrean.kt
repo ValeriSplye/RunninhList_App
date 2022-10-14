@@ -1,5 +1,6 @@
 package com.example.runninglist
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.view.Gravity
@@ -10,13 +11,14 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.runninglist.adapters.DaysOfWeekAdapter
 import com.example.runninglist.databinding.ActivityAddTaskScreanBinding
 import java.text.SimpleDateFormat
+import java.time.DayOfWeek
 import java.util.*
 
 class AddTaskScrean : AppCompatActivity(), DaysOfWeekAdapter.Listener,AboutTaskAdapter.Listener {
 
     var tasks = listOf<AboutTask>()
     lateinit var binding: ActivityAddTaskScreanBinding
-    private var Day: Int = -1
+    private var Day: Int = 0
     private var CodifierDay: Int = 0 // день, что идёт в класс
     var Codifier: String = "" // кодификартор для фотографии
     private val DayWeekList =
@@ -36,12 +38,45 @@ class AddTaskScrean : AppCompatActivity(), DaysOfWeekAdapter.Listener,AboutTaskA
     private var ImageId5: Int = 0
     private var ImageId6: Int = 0
     private var ImageId7: Int = 0
+    var sdf = SimpleDateFormat("EEEE")
+    var d = Date()
+    var dayOfTheWeek = sdf.format(d)
     private val adapter2 = AboutTaskAdapter(this)
     override fun onCreate(savedInstanceState: Bundle?) {
         binding = ActivityAddTaskScreanBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
+        when(dayOfTheWeek.toString()) {
+            "Monday" -> Day = 1
+            "Tuesday" -> Day = 2
+            "Wednesday" -> Day = 3
+            "Thursday" -> Day = 4
+            "Friday" -> Day = 5
+            "Saturday" -> Day = 6
+            "Sunday" -> Day = 7
+            "monday" -> Day = 1
+            "tuesday" -> Day = 2
+            "wednesday" -> Day = 3
+            "thursday" -> Day = 4
+            "friday" -> Day = 5
+            "saturday" -> Day = 6
+            "sunday" -> Day = 7
+            "Понедельник" -> Day = 1
+            "Вторник" -> Day = 2
+            "Среда" -> Day = 3
+            "Четверг" -> Day = 4
+            "Пятница" -> Day = 5
+            "Суббота" -> Day = 6
+            "Воскресенье" -> Day = 7
+            "понедельник" -> Day = 1
+            "вторник" -> Day = 2
+            "среда" -> Day = 3
+            "четверг" -> Day = 4
+            "пятница" -> Day = 5
+            "суббота" -> Day = 6
+            "воскресенье" -> Day = 7
+        }
         // функция флажка для ежедневной задачи
         binding.ButtonEveryTask.setOnClickListener { view: View ->
             if (countButtonEveryday == 0 || countButtonEveryday % 2 == 0) {
@@ -75,19 +110,9 @@ class AddTaskScrean : AppCompatActivity(), DaysOfWeekAdapter.Listener,AboutTaskA
             ImportanceOfTheTask = "Сложный"
         }
 
+
         binding.AddTaskButton.setOnClickListener { view: View ->
-            var sdf = SimpleDateFormat("EEEE")
-            var d = Date()
-            var dayOfTheWeek = sdf.format(d)
-            when(dayOfTheWeek.toString()) {
-                "Monday" -> Day = 1
-                "Tuesday" -> Day = 2
-                "Wednesday" -> Day = 3
-                "Thursday" -> Day = 4
-                "Friday" -> Day = 5
-                "Saturday" -> Day = 6
-                "Sunday" -> Day = 7
-            }
+
 
             if (Daily == "Ежедневная" || Daily == "Не ежедневная") {
                 WhatPictureDefinition()
@@ -131,7 +156,8 @@ class AddTaskScrean : AppCompatActivity(), DaysOfWeekAdapter.Listener,AboutTaskA
         }
 
     }
-    AddList()
+        AddList()
+
 
 }
     // функция установления кодификатора для изображения
@@ -571,48 +597,32 @@ class AddTaskScrean : AppCompatActivity(), DaysOfWeekAdapter.Listener,AboutTaskA
 
     }
     // дни недели
+    @SuppressLint("SuspiciousIndentation")
     private fun AddList(){
-        var sdf = SimpleDateFormat("EEEE")
-        var d = Date()
-        var dayOfTheWeek = sdf.format(d)
-        when(dayOfTheWeek.toString()) {
-            "Monday" -> Day = 1
-            "Tuesday" -> Day = 2
-            "Wednesday" -> Day = 3
-            "Thursday" -> Day = 4
-            "Friday" -> Day = 5
-            "Saturday" -> Day = 6
-            "Sunday" -> Day = 7
-        }
         binding.apply {
 
             recyclerView.layoutManager = LinearLayoutManager(this@AddTaskScrean)
 
             recyclerView.adapter = adapter
-           /* for (i in 0..6) {
-                val item = DaysOfTheWeek(DayWeekList[index])
-                adapter.appLant(item)
-                index++
 
-            }*/
-                if(Day != 1) {
-                    index = Day-1
-                    for (i in Day-1..6) {
-                        val item = DaysOfTheWeek(DayWeekList[index])
-                        adapter.appLant(item)
-                        index++
-
-                    }
+            if(Day != 1) {
+                index = Day-1
+                for (i in Day-1..6) {
+                    val item = DaysOfTheWeek(DayWeekList[index])
+                    adapter.appLant(item)
+                    index++
 
                 }
-                else {
-                    for (i in 0..6) {
-                        val item = DaysOfTheWeek(DayWeekList[index])
-                        adapter.appLant(item)
-                        index++
 
-                    }
+            }
+            else {
+                for (i in 0..6) {
+                    val item = DaysOfTheWeek(DayWeekList[index])
+                    adapter.appLant(item)
+                    index++
+
                 }
+            }
         }
     }
     //обозначения выбора для пользователя
