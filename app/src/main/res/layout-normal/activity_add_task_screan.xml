@@ -172,17 +172,22 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/AddTaskButton"
         android:layout_width="259dp"
         android:layout_height="93dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="-40dp"
+        android:layout_marginEnd="-30dp"
         android:background="@drawable/botton_r"
         android:fontFamily="@font/oswald_bold"
         android:text="@string/AddTask"
         android:textAllCaps="false"
         android:textSize="16dp"
-        android:id="@+id/AddTaskButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.541"
         app:layout_constraintStart_toStartOf="@+id/imageView6"
-        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:layout_constraintVertical_bias="0.358" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
